@@ -3,14 +3,21 @@ import React from 'react';
 
 const Validation = ({txtLength}) => {
     let length = txtLength;
+    let mainContent;
     if(length > 5){
-        <p>Text Too long</p>
+        mainContent =(
+     <p>Text Too long</p>
+        )
     }
     else{
+    mainContent = (
         <p>Text Too short</p>
+    )
     }
     return(
-        {length}
+        <div>
+               {mainContent}
+        </div>
     )
 }
 

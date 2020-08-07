@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Validation from './Validation';
-import CharComponent from './CharComponent';
+// import CharComponent from './CharComponent';
 import './App.css';
 
 function App() {
@@ -12,9 +12,12 @@ function App() {
   const handleInputValue = (event) => {
     setInput(event.target.value);
   }
+  console.log(length);
   return (
     <div className="App">
-      <input type="text" onChange={handleInputLength,handleInputValue} value={input}/>
+      <input type="text" onChange={(event) => {handleInputLength(event);
+      handleInputValue(even);}} value={input}/>
+      <p> {input} </p>
       <p>The length is : {length}</p>
       <Validation txtLength={length}/> 
     </div>
