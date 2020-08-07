@@ -1,17 +1,22 @@
-// import React from 'react';
+import React from 'react';
 
-// const CharComponent = () => {
-//  const style = {
-//      display:inline-block;
-//      padding:16px;
-//      text-align:center;
-//      margin 
-//     }
-//   return(
-//       <p className={style}></p>
-//   )  
-// }
+const CharComponent = ({character,clicked}) => {
+ const style = {
+     display: "inline-block",
+     padding:"16px",
+     margin: "16px",
+     border: "1px solid black",
+     textAlign: "center",
+    };
+  return(
+      <div>
+        <p style={style} onClick={clicked}>
+              {character}
+        </p>
+      </div>
+  )  
+}
 
 
 
-// export default CharComponent;
+export default CharComponent;
