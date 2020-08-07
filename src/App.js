@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Validation from './Validation';
+import CharComponent from './CharComponent';
 import './App.css';
 
 function App() {
