@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <input type="text" onChange={(event) => {handleInputLength(event);
-      handleInputValue(even);}} value={input}/>
+      handleInputValue(event);}} value={input}/>
       <p> {input} </p>
       <p>The length is : {length}</p>
       <Validation txtLength={length}/> 
