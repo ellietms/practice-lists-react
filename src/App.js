@@ -21,10 +21,11 @@ function App() {
   };
 
   const deleteCharHandler = (index) => {
-  //   const text = input.split('');
-  //   text.splice(index,1);
-  //   const updatedText = 
-  // };
+    const text = input.split('');
+    text.splice(index,1);
+    const updatedText = text.join('');
+    setInput(updatedText);
+  };
 
   console.log(length);
   return (
